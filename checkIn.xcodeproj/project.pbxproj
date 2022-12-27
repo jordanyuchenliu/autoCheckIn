@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B22C866E291B116A00A7DE6D /* UnderlinedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C866D291B116A00A7DE6D /* UnderlinedTextFieldStyle.swift */; };
+		B22C8671291DEB7000A7DE6D /* HaveOntarioHealthCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C8670291DEB7000A7DE6D /* HaveOntarioHealthCardContentView.swift */; };
+		B22C8675291DF08500A7DE6D /* NoOntarioHealthCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C8674291DF08500A7DE6D /* NoOntarioHealthCardContentView.swift */; };
+		B22C867F291E155A00A7DE6D /* ExpiredOhipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C867E291E155A00A7DE6D /* ExpiredOhipContentView.swift */; };
+		B22C8684291EA22100A7DE6D /* UpdateRetrievedPatientContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C8683291EA22100A7DE6D /* UpdateRetrievedPatientContentView.swift */; };
+		B22C8686291EA54200A7DE6D /* OntarioBookingConfirmationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C8685291EA54200A7DE6D /* OntarioBookingConfirmationContentView.swift */; };
+		B22C868A291FF03E00A7DE6D /* AddressAutoComplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C8689291FF03E00A7DE6D /* AddressAutoComplete.swift */; };
+		B22C86D52926894F00A7DE6D /* AWSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C86D42926894F00A7DE6D /* AWSHandler.swift */; };
+		B22C86D9292A714900A7DE6D /* EditProviderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C86D8292A714900A7DE6D /* EditProviderContentView.swift */; };
+		B22C86DB292A982200A7DE6D /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C86DA292A982200A7DE6D /* Provider.swift */; };
+		B22C86DE293046C600A7DE6D /* TextFieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C86DD293046C600A7DE6D /* TextFieldIcon.swift */; };
+		B2599C2B28E8D29200E99203 /* checkInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2599C2A28E8D29200E99203 /* checkInApp.swift */; };
+		B2599C2F28E8D29800E99203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2599C2E28E8D29800E99203 /* Assets.xcassets */; };
+		B2599C3228E8D29800E99203 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2599C3128E8D29800E99203 /* Preview Assets.xcassets */; };
+		B2599C3928E9E8F400E99203 /* CheckInAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2599C3828E9E8F400E99203 /* CheckInAppModel.swift */; };
+		B2599C3B28E9EA1B00E99203 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2599C3A28E9EA1B00E99203 /* ViewModel.swift */; };
+		B2599C3D28EA16AE00E99203 /* SetUpContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2599C3C28EA16AD00E99203 /* SetUpContentView.swift */; };
+		B2599C4128EA392400E99203 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2599C4028EA392400E99203 /* Patient.swift */; };
+		B2AA448628F39CCF00796956 /* CardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA448528F39CCF00796956 /* CardScanner.swift */; };
+		B2AA448828F4824500796956 /* CardScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA448728F4824500796956 /* CardScannerViewController.swift */; };
+		B2AA448A28F4919C00796956 /* CardScannerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA448928F4919C00796956 /* CardScannerContentView.swift */; };
+		B2B53158293306550096A807 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B53157293306550096A807 /* LoadingView.swift */; };
+		B2B5315A2936DA100096A807 /* EnterSexContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B531592936DA100096A807 /* EnterSexContentView.swift */; };
+		B2B5315C2936DA970096A807 /* EnterContactInfoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5315B2936DA970096A807 /* EnterContactInfoContentView.swift */; };
+		B2B5315E2936DAD80096A807 /* EnterAddressContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5315D2936DAD80096A807 /* EnterAddressContentView.swift */; };
+		B2B531602936DAE60096A807 /* EnterReasonForVisitContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5315F2936DAE60096A807 /* EnterReasonForVisitContentView.swift */; };
+		B2F9443C293BCA1D008AD6B2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F9443B293BCA1D008AD6B2 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B22C866D291B116A00A7DE6D /* UnderlinedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextFieldStyle.swift; sourceTree = "<group>"; };
+		B22C8670291DEB7000A7DE6D /* HaveOntarioHealthCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaveOntarioHealthCardContentView.swift; sourceTree = "<group>"; };
+		B22C8674291DF08500A7DE6D /* NoOntarioHealthCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoOntarioHealthCardContentView.swift; sourceTree = "<group>"; };
+		B22C867E291E155A00A7DE6D /* ExpiredOhipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiredOhipContentView.swift; sourceTree = "<group>"; };
+		B22C8683291EA22100A7DE6D /* UpdateRetrievedPatientContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRetrievedPatientContentView.swift; sourceTree = "<group>"; };
+		B22C8685291EA54200A7DE6D /* OntarioBookingConfirmationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OntarioBookingConfirmationContentView.swift; sourceTree = "<group>"; };
+		B22C8689291FF03E00A7DE6D /* AddressAutoComplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressAutoComplete.swift; sourceTree = "<group>"; };
+		B22C86D42926894F00A7DE6D /* AWSHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSHandler.swift; sourceTree = "<group>"; };
+		B22C86D8292A714900A7DE6D /* EditProviderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProviderContentView.swift; sourceTree = "<group>"; };
+		B22C86DA292A982200A7DE6D /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		B22C86DD293046C600A7DE6D /* TextFieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
+		B2599C2728E8D29200E99203 /* checkIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checkIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2599C2A28E8D29200E99203 /* checkInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInApp.swift; sourceTree = "<group>"; };
+		B2599C2E28E8D29800E99203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2599C3128E8D29800E99203 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2599C3828E9E8F400E99203 /* CheckInAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInAppModel.swift; sourceTree = "<group>"; };
+		B2599C3A28E9EA1B00E99203 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B2599C3C28EA16AD00E99203 /* SetUpContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpContentView.swift; sourceTree = "<group>"; };
+		B2599C4028EA392400E99203 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		B2AA448528F39CCF00796956 /* CardScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScanner.swift; sourceTree = "<group>"; };
+		B2AA448728F4824500796956 /* CardScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScannerViewController.swift; sourceTree = "<group>"; };
+		B2AA448928F4919C00796956 /* CardScannerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScannerContentView.swift; sourceTree = "<group>"; };
+		B2B53157293306550096A807 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B2B531592936DA100096A807 /* EnterSexContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterSexContentView.swift; sourceTree = "<group>"; };
+		B2B5315B2936DA970096A807 /* EnterContactInfoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterContactInfoContentView.swift; sourceTree = "<group>"; };
+		B2B5315D2936DAD80096A807 /* EnterAddressContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterAddressContentView.swift; sourceTree = "<group>"; };
+		B2B5315F2936DAE60096A807 /* EnterReasonForVisitContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterReasonForVisitContentView.swift; sourceTree = "<group>"; };
+		B2F9443B293BCA1D008AD6B2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2599C2428E8D29200E99203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B22C866F291DEB2800A7DE6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2599C3C28EA16AD00E99203 /* SetUpContentView.swift */,
+				B22C8670291DEB7000A7DE6D /* HaveOntarioHealthCardContentView.swift */,
+				B2AA448928F4919C00796956 /* CardScannerContentView.swift */,
+				B22C8674291DF08500A7DE6D /* NoOntarioHealthCardContentView.swift */,
+				B22C867E291E155A00A7DE6D /* ExpiredOhipContentView.swift */,
+				B22C8683291EA22100A7DE6D /* UpdateRetrievedPatientContentView.swift */,
+				B22C8685291EA54200A7DE6D /* OntarioBookingConfirmationContentView.swift */,
+				B22C86D8292A714900A7DE6D /* EditProviderContentView.swift */,
+				B2B53157293306550096A807 /* LoadingView.swift */,
+				B2B531592936DA100096A807 /* EnterSexContentView.swift */,
+				B2B5315B2936DA970096A807 /* EnterContactInfoContentView.swift */,
+				B2B5315D2936DAD80096A807 /* EnterAddressContentView.swift */,
+				B2B5315F2936DAE60096A807 /* EnterReasonForVisitContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B22C8672291DEFED00A7DE6D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2AA448728F4824500796956 /* CardScannerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B22C8673291DF00D00A7DE6D /* Representables */ = {
+			isa = PBXGroup;
+			children = (
+				B2AA448528F39CCF00796956 /* CardScanner.swift */,
+			);
+			path = Representables;
+			sourceTree = "<group>";
+		};
+		B22C8680291E170100A7DE6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2599C3A28E9EA1B00E99203 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B22C8681291E171A00A7DE6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B22C86D42926894F00A7DE6D /* AWSHandler.swift */,
+				B2F9443B293BCA1D008AD6B2 /* LocationManager.swift */,
+				B2599C3828E9E8F400E99203 /* CheckInAppModel.swift */,
+				B22C8689291FF03E00A7DE6D /* AddressAutoComplete.swift */,
+				B2599C4028EA392400E99203 /* Patient.swift */,
+				B22C86DA292A982200A7DE6D /* Provider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B22C8682291E172B00A7DE6D /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				B22C866D291B116A00A7DE6D /* UnderlinedTextFieldStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		B22C86DC293046A500A7DE6D /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				B22C86DD293046C600A7DE6D /* TextFieldIcon.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		B2599C1E28E8D29200E99203 = {
+			isa = PBXGroup;
+			children = (
+				B2599C2928E8D29200E99203 /* checkIn */,
+				B2599C2828E8D29200E99203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2599C2828E8D29200E99203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2599C2728E8D29200E99203 /* checkIn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2599C2928E8D29200E99203 /* checkIn */ = {
+			isa = PBXGroup;
+			children = (
+				B22C86DC293046A500A7DE6D /* ViewModifier */,
+				B22C8682291E172B00A7DE6D /* Style */,
+				B22C8681291E171A00A7DE6D /* Models */,
+				B22C8680291E170100A7DE6D /* ViewModel */,
+				B22C8673291DF00D00A7DE6D /* Representables */,
+				B22C8672291DEFED00A7DE6D /* Controllers */,
+				B22C866F291DEB2800A7DE6D /* Views */,
+				B2599C2A28E8D29200E99203 /* checkInApp.swift */,
+				B2599C2E28E8D29800E99203 /* Assets.xcassets */,
+				B2599C3028E8D29800E99203 /* Preview Content */,
+			);
+			path = checkIn;
+			sourceTree = "<group>";
+		};
+		B2599C3028E8D29800E99203 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2599C3128E8D29800E99203 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2599C2628E8D29200E99203 /* checkIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2599C3528E8D29800E99203 /* Build configuration list for PBXNativeTarget "checkIn" */;
+			buildPhases = (
+				B2599C2328E8D29200E99203 /* Sources */,
+				B2599C2428E8D29200E99203 /* Frameworks */,
+				B2599C2528E8D29200E99203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = checkIn;
+			packageProductDependencies = (
+			);
+			productName = checkIn;
+			productReference = B2599C2728E8D29200E99203 /* checkIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2599C1F28E8D29200E99203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B2599C2628E8D29200E99203 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B2599C2228E8D29200E99203 /* Build configuration list for PBXProject "checkIn" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2599C1E28E8D29200E99203;
+			packageReferences = (
+			);
+			productRefGroup = B2599C2828E8D29200E99203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2599C2628E8D29200E99203 /* checkIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2599C2528E8D29200E99203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2599C3228E8D29800E99203 /* Preview Assets.xcassets in Resources */,
+				B2599C2F28E8D29800E99203 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2599C2328E8D29200E99203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22C867F291E155A00A7DE6D /* ExpiredOhipContentView.swift in Sources */,
+				B22C8686291EA54200A7DE6D /* OntarioBookingConfirmationContentView.swift in Sources */,
+				B2F9443C293BCA1D008AD6B2 /* LocationManager.swift in Sources */,
+				B2599C2B28E8D29200E99203 /* checkInApp.swift in Sources */,
+				B22C868A291FF03E00A7DE6D /* AddressAutoComplete.swift in Sources */,
+				B22C86DB292A982200A7DE6D /* Provider.swift in Sources */,
+				B2AA448828F4824500796956 /* CardScannerViewController.swift in Sources */,
+				B22C8671291DEB7000A7DE6D /* HaveOntarioHealthCardContentView.swift in Sources */,
+				B2599C3B28E9EA1B00E99203 /* ViewModel.swift in Sources */,
+				B22C8684291EA22100A7DE6D /* UpdateRetrievedPatientContentView.swift in Sources */,
+				B2599C3D28EA16AE00E99203 /* SetUpContentView.swift in Sources */,
+				B2599C3928E9E8F400E99203 /* CheckInAppModel.swift in Sources */,
+				B22C866E291B116A00A7DE6D /* UnderlinedTextFieldStyle.swift in Sources */,
+				B2B5315C2936DA970096A807 /* EnterContactInfoContentView.swift in Sources */,
+				B2B5315E2936DAD80096A807 /* EnterAddressContentView.swift in Sources */,
+				B2599C4128EA392400E99203 /* Patient.swift in Sources */,
+				B2B5315A2936DA100096A807 /* EnterSexContentView.swift in Sources */,
+				B2B53158293306550096A807 /* LoadingView.swift in Sources */,
+				B2B531602936DAE60096A807 /* EnterReasonForVisitContentView.swift in Sources */,
+				B2AA448A28F4919C00796956 /* CardScannerContentView.swift in Sources */,
+				B22C86DE293046C600A7DE6D /* TextFieldIcon.swift in Sources */,
+				B22C8675291DF08500A7DE6D /* NoOntarioHealthCardContentView.swift in Sources */,
+				B2AA448628F39CCF00796956 /* CardScanner.swift in Sources */,
+				B22C86D9292A714900A7DE6D /* EditProviderContentView.swift in Sources */,
+				B22C86D52926894F00A7DE6D /* AWSHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2599C3328E8D29800E99203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2599C3428E8D29800E99203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2599C3628E8D29800E99203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"checkIn/Preview Content\"";
+				DEVELOPMENT_TEAM = GVS539BS3N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = checkIn/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan your ID";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need to access your clinic's location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your clinic's location.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexyehhh.checkIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2599C3728E8D29800E99203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"checkIn/Preview Content\"";
+				DEVELOPMENT_TEAM = GVS539BS3N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = checkIn/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan your ID";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need to access your clinic's location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to access your clinic's location.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexyehhh.checkIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2599C2228E8D29200E99203 /* Build configuration list for PBXProject "checkIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2599C3328E8D29800E99203 /* Debug */,
+				B2599C3428E8D29800E99203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2599C3528E8D29800E99203 /* Build configuration list for PBXNativeTarget "checkIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2599C3628E8D29800E99203 /* Debug */,
+				B2599C3728E8D29800E99203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2599C1F28E8D29200E99203 /* Project object */;
+}
